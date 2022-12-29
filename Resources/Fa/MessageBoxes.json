@@ -1,0 +1,14 @@
+﻿{
+  "Success": {
+    "Message": "{any} موفقیت آمیز بود",
+    "Header": "موفقیت"
+  },
+  "Error": {
+    "Message": "خطایی در {any} رخ داده است",
+    "Header": "خطا"
+  },
+  "FinishGame": {
+    "Message": "زمان شما به پایان رسید\nامتیاز کسب شده: {score}",
+    "Header":  "اتمام وقت"
+  }
+}

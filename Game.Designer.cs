@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
             this.txtTest = new System.Windows.Forms.TextBox();
             this.txtAnswer = new System.Windows.Forms.TextBox();
             this.btnNext = new System.Windows.Forms.Button();
@@ -78,15 +78,15 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "00";
             // 
-            // label6
+            // lblScore
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(222, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "امتیاز :";
+            this.lblScore.AutoSize = true;
+            this.lblScore.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Location = new System.Drawing.Point(222, 33);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(46, 17);
+            this.lblScore.TabIndex = 1;
+            this.lblScore.Text = "امتیاز :";
             // 
             // txtTest
             // 
@@ -124,13 +124,13 @@
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.txtTest);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -144,7 +144,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.TextBox txtTest;
         private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Button btnNext;
