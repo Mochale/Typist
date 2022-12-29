@@ -20,17 +20,28 @@ namespace Typist.App
         public string Lang { get; set; }
         public Form1()
         {
+            DataSet("Fa");
+        }
+
+        public Form1(string lang)
+        {
+            DataSet(lang);
+        }
+
+        protected void DataSet(string lang)
+        {
             InitializeComponent();
 
-            if (Lang == null || Lang == String.Empty)
-                Lang = "Fa";
+            Lang = lang;
             string resource = File.ReadAllText($"{Application.StartupPath}/Resources/{Lang}/{ResourceFile}");
             _FormModel model = JsonSerializer.Deserialize<_FormModel>(resource);
 
             this.Text = model.Text;
+            rchTextDescription.Text = model.Description;
 
             btnStart.Text = model.Buttons.Start.Text;
         }
+
 
         private void btnStart_Click(object sender, EventArgs e)
         {
