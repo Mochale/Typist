@@ -9,6 +9,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Typist.App.Models.Main;
 using System.IO;
 
 namespace Typist.App
@@ -24,7 +25,7 @@ namespace Typist.App
             if (Lang == null || Lang == String.Empty)
                 Lang = "Fa";
             string resource = File.ReadAllText($"{Application.StartupPath}/Resources/{Lang}/{ResourceFile}");
-            Model model = JsonSerializer.Deserialize<Model>(resource);
+            _FormModel model = JsonSerializer.Deserialize<_FormModel>(resource);
 
             this.Text = model.Text;
 
@@ -33,22 +34,12 @@ namespace Typist.App
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            new Game().ShowDialog();
+            new Game(this.Lang).ShowDialog();
         }
-    }
 
-    class Model
-    {
-        public string Text { get; set; }
-        public Button Buttons { get; set; }
-    }
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-    class Button
-    {
-        public Start Start { get; set; }
-    }
-    class Start
-    {
-        public string Text { set; get; }
+        }
     }
 }
