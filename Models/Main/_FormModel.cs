@@ -9,6 +9,7 @@ namespace Typist.App.Models.Main
     public class _FormModel
     {
         public string Text { get; set; }
+        public string Description { get; set; }
         public Button Buttons { get; set; }
     }
 

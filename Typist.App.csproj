@@ -74,8 +74,16 @@
     </Compile>
     <Compile Include="Models\Game\_FormModel.cs" />
     <Compile Include="Models\Main\_FormModel.cs" />
+    <Compile Include="Models\MessageBox\MessageBoxes.cs" />
+    <Compile Include="Models\RegisterLanguage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLanguage.Designer.cs">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelectLanguage.resx">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +116,7 @@
     <None Include="Resources\Fa\Forms\Game.json" />
     <None Include="Resources\Fa\Forms\Main.json" />
     <None Include="Resources\Fa\MessageBoxes.json" />
+    <None Include="Resources\Register.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -112,5 +124,6 @@
   <ItemGroup>
     <Content Include="Resources\Fa\Words.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
