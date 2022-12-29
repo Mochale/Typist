@@ -96,7 +96,7 @@ namespace Typist.App
         private void btnNext_Click(object sender, EventArgs e)
         {
             // Your text is correct
-            if (txtAnswer.Text.ToUpper() == txtTest.Text.ToUpper())
+            if (txtAnswer.Text.Trim().ToUpper() == txtTest.Text.ToUpper())
             {
                 score++;
                 /*
@@ -108,8 +108,10 @@ namespace Typist.App
                 */
                 lblScoreValue.Text = score.ToString("00");
                 ChangeText();
+                txtAnswer.Text = String.Empty;
+                txtAnswer.Focus();
             }
-            txtAnswer.Text = String.Empty;
+            txtAnswer.SelectAll();
             txtAnswer.Focus();
         }
 
