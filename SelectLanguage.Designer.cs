@@ -44,6 +44,7 @@
             // 
             // cbmLanguage
             // 
+            this.cbmLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbmLanguage.FormattingEnabled = true;
             this.cbmLanguage.Location = new System.Drawing.Point(12, 29);
             this.cbmLanguage.Name = "cbmLanguage";
@@ -58,6 +59,7 @@
             this.btnStart.TabIndex = 2;
             this.btnStart.Text = "اجرا";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // SelectLanguage
             // 
@@ -73,6 +75,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "انتخاب زبان";
+            this.Load += new System.EventHandler(this.SelectLanguage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
