@@ -46,6 +46,7 @@
             // 
             this.rchTextDescription.Location = new System.Drawing.Point(12, 12);
             this.rchTextDescription.Name = "rchTextDescription";
+            this.rchTextDescription.ReadOnly = true;
             this.rchTextDescription.Size = new System.Drawing.Size(348, 102);
             this.rchTextDescription.TabIndex = 1;
             this.rchTextDescription.Text = "";
