@@ -37,6 +37,7 @@ namespace Typist.App
             _FormModel model = JsonSerializer.Deserialize<_FormModel>(resource);
 
             this.Text = model.Text;
+            rchTextDescription.RightToLeft = Lang == "Fa" ? RightToLeft.Yes : RightToLeft.No;
             rchTextDescription.Text = model.Description;
 
             btnStart.Text = model.Buttons.Start.Text;
@@ -46,11 +47,6 @@ namespace Typist.App
         private void btnStart_Click(object sender, EventArgs e)
         {
             new Game(this.Lang).ShowDialog();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
