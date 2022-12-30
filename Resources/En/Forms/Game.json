@@ -1,0 +1,13 @@
+﻿{
+  "Text": "Game",
+  "Labels": {
+    "Score": {
+      "Text": "Score: "
+    }
+  },
+  "Buttons": {
+    "Next": {
+      "Text": "Next"
+    }
+  }
+}

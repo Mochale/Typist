@@ -36,28 +36,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(193, 32);
+            this.label1.Location = new System.Drawing.Point(14, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 16);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "زبان برنامه:";
+            this.label1.Text = "Language:";
             // 
             // cbmLanguage
             // 
             this.cbmLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbmLanguage.FormattingEnabled = true;
-            this.cbmLanguage.Location = new System.Drawing.Point(12, 29);
+            this.cbmLanguage.Location = new System.Drawing.Point(87, 28);
             this.cbmLanguage.Name = "cbmLanguage";
             this.cbmLanguage.Size = new System.Drawing.Size(175, 24);
             this.cbmLanguage.TabIndex = 1;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(12, 59);
+            this.btnStart.Location = new System.Drawing.Point(187, 58);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 28);
             this.btnStart.TabIndex = 2;
-            this.btnStart.Text = "اجرا";
+            this.btnStart.Text = "Run";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -70,11 +70,10 @@
             this.Controls.Add(this.cbmLanguage);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SelectLanguage";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "انتخاب زبان";
+            this.Text = "Language";
             this.Load += new System.EventHandler(this.SelectLanguage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

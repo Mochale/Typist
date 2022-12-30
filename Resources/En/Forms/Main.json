@@ -1,0 +1,9 @@
+﻿{
+  "Text": "Main page",
+  "Description": "The method of the game is like this, you have two text boxes on the page\nIn the first one there is a word that needs to be typed\nThe second one is what you type. You should try to type as many words as possible in 1 minute",
+  "Buttons": {
+    "Start": {
+      "Text": "Start"
+    }
+  }
+}

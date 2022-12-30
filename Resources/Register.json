@@ -2,7 +2,11 @@
   "Languages": [
     {
       "Name": "فارسی",
-      "Directory":  "Fa"
+      "Directory": "Fa"
+    },
+    {
+      "Name": "English",
+      "Directory": "En"
     }
   ]
 }
