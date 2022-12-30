@@ -1,0 +1,14 @@
+﻿{
+  "Success": {
+    "Message": "{any} was successfully !",
+    "Header": "SUCCESS"
+  },
+  "Error": {
+    "Message": "Some error happened on {any}",
+    "Header": "ERROR"
+  },
+  "FinishGame": {
+    "Message": "Time is up !\nYour score: {score}",
+    "Header":  "Time done"
+  }
+}
