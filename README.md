@@ -16,7 +16,7 @@ You can test your typing speed using this program.
 - There is two option for this solution 
 
 1. Make an issue and send Word.txt file of your language, in this solution we will add your file to project.
-2. Add by your own self localy.
+2. Add by your own self [localy](/#add-localy-word-to-app-%EF%B8%8F).
 
 
 ### Add localy word to app ⚙️
